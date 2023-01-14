@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home menu</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <style>
+        :root{
+            --white: #FFFFFF;
+            --black: #000000;
+            --dark: #232830;
+            --p-color: #797979;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+            --card-size:240px;
+            --card-size-mobile:140px;
+        }
+        body{
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+            /* font-family: 'Roboto', sans-serif; */
+        }
+        .desktop-menu{
+            width: 153px;
+            height: auto;
+            border: 1px solid var(--very-light-pink);
+            border-radius: 5px;
+            padding: 25px 25px 0 25px;
+        }
+        .desktop-menu ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .desktop-menu ul li{
+            text-align: end;
+        }
+        .desktop-menu ul li:last-child{
+            padding-top: 21px;
+            border-top: 1px solid var(--very-light-pink);
+            padding-bottom: 21px;
+        }
+        .desktop-menu ul li:not(:last-child){
+            font-size: var(--md);
+            margin-bottom: 30px;
+        }
+        .desktop-menu ul li a{
+            display: inline-block;
+            text-decoration: none;
+            font-weight: 700;
+            color: var(--black);
+        }
+        .desktop-menu ul li:last-child a{
+            font-size: var(--sm);
+            color: var(--hospital-green);
+        }
+    </style>
+</head>
+<body>
+    <div class="desktop-menu">
+        <ul>
+            <li><a href="#" class="title">My orders</a></li>
+            <li><a href="#" class="title">My account</a></li>
+            <li><a href="#" class="title">Sign out</a></li>
+        </ul>
+    </div>
+</body>
+</html>
