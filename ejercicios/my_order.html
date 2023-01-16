@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My order</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <style>
+        :root{
+            --white: #FFFFFF;
+            --black: #000000;
+            --dark: #232830;
+            --p-color: #797979;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+            --card-size:240px;
+            --card-size-mobile:140px;
+        }
+        body{
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+            /* font-family: 'Roboto', sans-serif; */
+        }
+        .my-order{
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .my-order-container{
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+        }
+        .title{
+            font-size: var(--lg);
+            line-height: 22px;
+            margin-bottom: 47px;
+        }
+        .purchase-card{
+            background-color: var(--text-input-field);
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 9px;
+            padding: 0 24px;
+        }
+        .purchase-card p{
+            font-size: var(--md);
+            font-weight: 700;
+        }
+        .purchase-card p:first-child{
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .purchase-card p:last-child{
+            text-align: end;
+        }
+        .purchase-card p span:last-of-type{
+            font-size: var(--sm);
+            font-weight: 400;
+            color: var(--p-color);
+        }
+        .shopping-card{
+            display: grid;
+            grid-template-columns: auto 1fr auto auto;
+            gap:17px;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+        .shopping-card figure{
+            margin:0;
+        }
+        .shopping-card figure img{
+            width: 70px;
+            height: 70px;
+            border-radius: 10px;
+            object-fit: cover;
+
+        }
+        .shopping-card p{
+            font-size: var(--md);
+            font-weight: 700;
+        }
+        .shopping-card p:first-of-type{
+            font-size: var(--sm);
+            font-weight: 400;
+            color: var(--p-color);
+        }
+        @media (max-width: 640px){
+            .title{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="my-order">
+        <div class="my-order-container">
+            <h1 class="title">My order</h1>
+            <div class="purchase-card">
+                <p>
+                    <span>04.25.2021</span>
+                    <span>6 articles</span>
+                </p>
+                <p>$ 560.00</p>
+            </div>
+            <div class="shopping-card">
+                <figure>
+                    <img src="https://images.pexels.com/photos/4198566/pexels-photo-4198566.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="bike">
+                </figure>
+                <p>Bike</p>
+                <p>$120,00</p>
+            </div>
+            <div class="shopping-card">
+                <figure>
+                    <img src="https://images.pexels.com/photos/4198566/pexels-photo-4198566.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="bike">
+                </figure>
+                <p>Bike</p>
+                <p>$120,00</p>
+            </div>
+            <div class="shopping-card">
+                <figure>
+                    <img src="https://images.pexels.com/photos/4198566/pexels-photo-4198566.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="bike">
+                </figure>
+                <p>Bike</p>
+                <p>$120,00</p>
+            </div>
+            <div class="shopping-card">
+                <figure>
+                    <img src="https://images.pexels.com/photos/4198566/pexels-photo-4198566.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="bike">
+                </figure>
+                <p>Bike</p>
+                <p>$120,00</p>
+            </div>
+            <div class="shopping-card">
+                <figure>
+                    <img src="https://images.pexels.com/photos/4198566/pexels-photo-4198566.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="bike">
+                </figure>
+                <p>Bike</p>
+                <p>$120,00</p>
+            </div>
+            <div class="shopping-card">
+                <figure>
+                    <img src="https://images.pexels.com/photos/4198566/pexels-photo-4198566.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="bike">
+                </figure>
+                <p>Bike</p>
+                <p>$120,00</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
