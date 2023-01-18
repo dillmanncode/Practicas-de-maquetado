@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My order</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <style>
+        :root{
+            --white: #FFFFFF;
+            --black: #000000;
+            --dark: #232830;
+            --p-color: #797979;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+            --card-size:240px;
+            --card-size-mobile:140px;
+        }
+        body{
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+            /* font-family: 'Roboto', sans-serif; */
+        }
+        ul, li{
+            list-style: none;
+        }
+        navbar{
+            width: 100%;
+            height: 54px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid var(--white);
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.046805);
+        }
+        .ham-menu{
+            display: none;
+        }
+        .navbar-left{
+            display: flex;
+            align-items: center;
+            gap: 53px;
+            margin: 12px 51px;
+        }
+        .navbar-left .logo{
+            width: 144px;
+            height: 30px;
+        }
+        .navbar-left .categories{
+            display: flex;
+            align-items: center;
+            padding: 0;
+            gap: 19px;
+        }
+        .navbar-left .categories .categories-item a{
+            text-decoration: none;
+            font-size: var(--md);
+            font-weight: 500;
+            color: var(--very-light-pink);
+        }
+        .navbar-left .categories .categories-item a:hover{
+            color: var(--hospital-green);
+            font-weight: 700;
+            border: 1px solid var(--hospital-green);
+            border-radius: 10px;
+            padding: 5px 14px;
+        }
+        .navbar-right{
+            margin: 13px 51px;
+        }
+        .navbar-right ul{
+            height: 54px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            padding: 0;
+        }
+        .navbar-right .navbar-account p{
+            font-size: var(--sm);
+            font-weight: 300;
+            line-height: 18px;
+        }
+        .navbar-right .navbar-account img{
+            transform: rotate(90deg);
+            width:5px;
+        }
+        .navbar-right .navbar-shopping-container{
+            display: flex;
+            align-items: center;
+        }
+        .navbar-right .navbar-shopping-container div{
+            background-color: var(--hospital-green);
+            border-radius: 50%;
+            height: 16px;
+            width: 16px;
+            text-align: center;
+            font-size: var(--sm);
+            font-weight: 700;
+            position: absolute;
+            top: 6px;
+            right: 45px;
+        }
+        .navbar-shopping-cart{
+            position: relative;
+        }
+        @media(max-width: 640px){
+            .ham-menu{
+                display: block;
+                margin-left: 19px;
+            }
+            .navbar-left .categories{
+                display: none;
+            }
+            .navbar-right .navbar-account{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <navbar>
+        <img src="./icons/icon_menu.svg" alt="Menú mobile" class="ham-menu">
+        <div class="navbar-left">
+            <img src="./logos/logo_yard_sale.svg" alt="Logo" class="logo">
+            <ul class="categories">
+                <li class="categories-item"><a href="#">All</a></li>
+                <li class="categories-item"><a href="#">Clothes</a></li>
+                <li class="categories-item"><a href="#">Electronics</a></li>
+                <li class="categories-item"><a href="#">Furniture</a></li>
+                <li class="categories-item"><a href="#">Toys</a></li>
+                <li class="categories-item"><a href="#">Others</a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <ul>
+                <li class="navbar-account">
+                    <p>yardsale@example.com <img src="./icons/flechita.svg" alt="arrow down">
+                    </p>
+                </li>
+                <li class="navbar-shopping-container">
+                    <img src="./icons/icon_shopping_cart.svg" alt="Shopping cart" class="navbar-shopping-cart">
+                    <div class="navbar-items">2</div>
+                </li>
+            </ul>
+        </div>
+    </navbar>
+</body>
+</html>
