@@ -35,6 +35,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            position: absolute;
+            right: 0;
         }
         .product-detail-close{
             background-color: var(--white);
@@ -61,7 +63,7 @@
             width: 100%;
             height: 380px;
             object-fit: cover;
-            border-radius:10px ;
+            border-radius:0 0 10px 10px ;
         }
         .points {
             display: flex;
@@ -80,7 +82,7 @@
             background: var(--hospital-green);
         }
         .product-info{
-            margin-left: 35px;
+            margin: 0 35px;
         }
         .product-info p:first-of-type{
             margin-bottom: 5px;
@@ -116,7 +118,19 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            gap: 10px;
         }
+        @media (max-width: 640px){
+            .product-detail{
+                width: 100%;
+            }
+            .product-info{
+                margin: 0 19px;
+            }
+            .product-info p:nth-child(3){
+                margin-bottom: 55px;
+            }
+        }    
     </style>
 </head>
 <body>
@@ -135,7 +149,7 @@
             <p>Bike</p>
             <p>With its functional and practical interior, this refrigerator also fulfills a decorative function, adding personality and a retro-vintage aesthetic to your kitchen or workplace.</p>
         </div>
-        <button class="primary-button add-to-cart-button"><img src="./icons/bt_add_to_cart.svg" alt="add to cart">Add to cart</button>
+        <button class="primary-button add-to-cart-button"><img src="./icons/icon_shopping_cart.svg" alt="add to cart">Add to cart</button>
     </aside>
 </body>
 </html>
